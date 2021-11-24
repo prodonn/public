@@ -102,7 +102,7 @@ def main():
         fig_sun = px.sunburst(jco_df, path=['finbert_pred','siebert_pred'], 
                              color_discrete_map={'(?)':'black', 0:'red', 1:'darkblue'}, 
                              title='Center circle : finbert, second : siebert', 
-                             width=600, height=600)
+                             width=600, height=800)
         
         st.plotly_chart(fig_sun, use_container_width=True)
         
