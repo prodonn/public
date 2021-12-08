@@ -27,7 +27,7 @@ s3 = session.resource('s3')
 
 s3client = boto3.client('s3')
     
-BUCKET_NAME = 'recrutementdatascience'
+BUCKET_NAME = 'datascience'
 
 def get_body(file_name) :
    return s3.Bucket(BUCKET_NAME).Object(file_name).get()['Body']
